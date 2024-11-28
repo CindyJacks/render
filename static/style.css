@@ -1,0 +1,81 @@
+/* Style für den gesamten Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style für den Chatbox-Container */
+#chatbox {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style für den Nachrichtenbereich */
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    max-height: 400px;
+    padding-right: 10px;
+}
+
+/* Nachrichtentexte allgemein */
+.message {
+    background: #e9f7ef;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    width: fit-content;
+}
+
+/* Nachricht des Benutzers */
+.user-message {
+    align-self: flex-end;
+    background: #d1e7ff;
+}
+
+/* Nachricht des Chatbots */
+.bot-message {
+    align-self: flex-start;
+}
+
+/* Style für das Eingabefeld */
+#userInput {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+/* Style für den Eingabebereich */
+#chat-controls {
+    display: flex;
+}
+
+/* Style für den Senden-Button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
